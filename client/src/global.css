@@ -37,3 +37,25 @@ main a {
     color: #8F43EE;
     text-decoration: none;
 }
+.form button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+.form input {
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border-style: none;
+    background: #eeeeee;
+}
+.form label {
+    margin-top: 10px;
+}

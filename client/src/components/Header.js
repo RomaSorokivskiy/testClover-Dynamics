@@ -3,6 +3,8 @@ import {GiArrowCursor} from "react-icons/gi";
 import {DiGithubBadge} from "react-icons/di"
 import {Link} from "react-router-dom"
 
+// import
+
 const Header = () => {
     return(
         <header>
@@ -13,13 +15,18 @@ const Header = () => {
                     </span>
                 </h2>
                 <div>
-                    <Link to={"/home"}>
+                </div>
+                <div>
+                    <Link to={"/"}>
                         <Button>Home</Button>
                     </Link>
-                    <Link to={"board"}>
-                        <Button>My Board</Button>
+                    <Link to={"/register"}>
+                        <Button>Register</Button>
                     </Link>
-                    <Link to="https://github.com/RomaSorokivskiy/taskCloverDynamics.git">
+                    <Link to={"/login"}>
+                        <Button>Login</Button>
+                    </Link>
+                    <Link to="https://github.com/RomaSorokivskiy/testClover-Dynamics">
                         <Button>Source Code <span><DiGithubBadge/></span></Button>
                     </Link>
                 </div>
