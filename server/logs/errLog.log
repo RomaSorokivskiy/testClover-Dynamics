@@ -1,0 +1,26 @@
+20230316	14:24:18	3336a89f-0cbc-4936-81b0-1b671673a7c7	ValidationError: Lists validation failed: user: Cast to ObjectId failed for value "testname2" (type string) at path "user" because of "BSONError"	POST	/list	undefined
+20230316	15:01:19	d9aa5a6a-e2e1-41bd-a5b9-06fde09205cf	TypeError: Cannot read properties of null (reading 'deleteOne')	DELETE	/list/	undefined
+20230316	15:02:22	09cbd486-6762-42ae-90ed-43f4917b4bb5	ObjectParameterError: Parameter "filter" to findOne() must be an object, got 641312d9e6ea632af0fa192b	DELETE	/list/	undefined
+20230316	15:02:40	044d5184-0654-46f4-9f0d-4f69c07f1c11	TypeError: Cannot read properties of null (reading 'deleteOne')	DELETE	/list/	undefined
+20230316	15:05:31	9dc1f72c-6ed2-45ad-a3e8-97097244b6dc	ReferenceError: Cannot access 'list' before initialization	DELETE	/list/	undefined
+20230316	15:07:05	6ad93962-1533-4a2d-a9d2-6797d336d998	ReferenceError: Cannot access 'list' before initialization	DELETE	/list/	undefined
+20230316	15:13:01	6d4c743f-cf97-4c9f-9e43-c216b29a7e82	CastError: Cast to ObjectId failed for value "{ id: '6413154f463a1698db48062f' }" (type Object) at path "_id" for model "Cards"	DELETE	/list	undefined
+20230316	15:18:51	79d4823b-5414-406e-8b9e-d5c36a9420a5	TypeError: card.deleteOne is not a function	DELETE	/list	undefined
+20230316	15:20:23	2ec06dcd-859d-48be-9769-5e8ed9dd9272	TypeError: card.delete is not a function	DELETE	/list	undefined
+20230316	15:37:52	b21be4b6-d2de-4fb2-8d86-183e38b46a66	TypeError: list.deleteOne(...).exec is not a function	DELETE	/list	undefined
+20230316	15:40:50	20a3e955-73fc-41f8-a8e4-fafc216346b9	TypeError: list.deleteOne(...).exec is not a function	DELETE	/list/	undefined
+20230316	15:44:10	4b9f4e72-eedd-46aa-bcb1-8d886940a813	TypeError: el.deleteOne(...).exec is not a function	DELETE	/list	undefined
+20230316	15:45:21	2e8da4b2-e1d8-4359-8be7-57c1f1bd2392	TypeError: el.delete is not a function	DELETE	/list	undefined
+20230316	15:46:18	e7c4c85e-d9e7-4125-a25b-df6599e8079e	TypeError: card.delete is not a function	DELETE	/list	undefined
+20230316	15:46:57	f44531b1-62d2-44a9-abfb-61ca40219dec	TypeError: card.delete is not a function	DELETE	/list	undefined
+20230316	15:47:19	7e6e14d0-d069-4ccf-a0ca-3e738fd35e30	TypeError: el.delete is not a function	DELETE	/list	undefined
+20230316	15:50:56	01228907-b52f-47da-b928-12dae661834a	TypeError: list.deleteOne(...).exec is not a function	DELETE	/list	undefined
+20230316	15:52:34	57d5ae57-09a9-41f9-b8e0-c4d2c43ab9c7	TypeError: list.deleteOne(...).exec is not a function	DELETE	/list	undefined
+20230316	16:02:08	674cab35-726a-419c-93c8-6d533cc6f4e1	CastError: Cast to ObjectId failed for value "{ id: '64131fc68f9a7d1a289ea4cf' }" (type Object) at path "_id" for model "Cards"	DELETE	/list	undefined
+20230316	16:07:14	2f45153c-1cff-45a0-bca8-8988fd3cf7b8	ReferenceError: el is not defined	DELETE	/list	undefined
+20230316	16:07:30	f4a24f20-1f22-4c17-b1c8-b5da594de293	TypeError: false is not a function	DELETE	/list	undefined
+20230316	16:15:18	96badafa-af3a-479d-a69a-73069b8e549d	TypeError: card.delete is not a function	DELETE	/list	undefined
+20230316	16:16:18	9abc6679-b287-4f53-b53d-6038703f2f73	TypeError: el.delete is not a function	DELETE	/list	undefined
+20230316	16:16:49	3aed85bc-d041-45fb-ab1f-a3ee87a71377	TypeError: el.deleteOne(...).exec is not a function	DELETE	/list	undefined
+20230316	16:17:31	c666c91f-a6ac-40d0-85d6-bfff69fcba32	TypeError: el.deleteMany is not a function	DELETE	/list	undefined
+20230316	16:17:59	103a53ad-9bae-4127-9162-4674d7972af5	TypeError: el.deleteMany is not a function	DELETE	/list	undefined
