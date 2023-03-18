@@ -27,7 +27,8 @@ footer {
     color: #eeeeee;
 }
 main {
-    height: 73vh;
+    min-height: 73vh;
+    padding-bottom: 25px;
     background: #413543;
     display: flex;
     align-items: center;
@@ -58,4 +59,71 @@ main a {
 }
 .form label {
     margin-top: 10px;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.List {
+    margin-top: 25px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #2D2727;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 15px -5px 15px #2D2727;
+}
+.card-wrapper {
+    min-height: 70px;
+}
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 350px;
+    background: #eeeeee;
+    color:#2D2727;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.Card h5 {
+    font-size: 18px;
+}
+.Card p {
+    margin-top: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+.editForm{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2D2727;
+    border-radius: 25px;
+    position: absolute;
+    top: 15%;
+    padding:25px;
+}
+.active {
+    transform:scale(1);
+}
+.unactive {
+    transform: scale(0);
+}
+.editForm form input {
+    width: 300px;
+    height: 45px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.editForm form .descr {
+    height: 100px;
 }

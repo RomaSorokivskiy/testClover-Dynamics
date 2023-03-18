@@ -3,11 +3,14 @@ import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setCredentials } from './authSlice'
 import { useLoginMutation } from './authSliceAPI'
+import useAuth from "../../hooks/useAuth";
+
 import usePersist from '../../hooks/usePersist'
 import useTitle from '../../hooks/useTitle'
 import {Container} from "@mui/material";
 
 const Login = () => {
+    const {id} = useAuth();
     useTitle('ReactTrello: Login')
 
     const userRef = useRef()
@@ -19,7 +22,7 @@ const Login = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
-    const [login, { isLoading }] = useLoginMutation()
+    const [login] = useLoginMutation()
 
     useEffect(() => {
         userRef.current.focus()
@@ -29,15 +32,15 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const { accessToken } = await login({ username }).unwrap()
+            const { accessToken } = await login({ username,id }).unwrap()
             dispatch(setCredentials({ accessToken }))
             setUsername('')
-            navigate('/board')
+            navigate(`/board`)
         } catch (err) {
             if (!err.status) {
                 setErrMsg('No Server Response');
             } else if (err.status === 400) {
-                setErrMsg('Missing Username or Password');
+                setErrMsg('Missing Username');
             } else if (err.status === 401) {
                 setErrMsg('Unauthorized');
             } else {

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
-import { useAddNewUserMutation } from "./userApiSlice"
+import { useAddNewUserMutation } from "./userSliceAPI"
 import { useNavigate } from "react-router-dom"
 import useTitle from "../../hooks/useTitle"
-import {Container,Button} from "@mui/material";
+import {Container} from "@mui/material";
 import {CiSaveUp2} from "react-icons/ci";
 
 const USER_REGEX = /^[A-z]{3,20}$/
@@ -17,7 +17,6 @@ const NewUserForm = () => {
     }] = useAddNewUserMutation()
 
     const navigate = useNavigate()
-
     const [username, setUsername] = useState('')
     const [validUsername, setValidUsername] = useState(false)
 

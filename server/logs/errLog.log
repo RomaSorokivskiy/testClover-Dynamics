@@ -24,3 +24,137 @@
 20230316	16:16:49	3aed85bc-d041-45fb-ab1f-a3ee87a71377	TypeError: el.deleteOne(...).exec is not a function	DELETE	/list	undefined
 20230316	16:17:31	c666c91f-a6ac-40d0-85d6-bfff69fcba32	TypeError: el.deleteMany is not a function	DELETE	/list	undefined
 20230316	16:17:59	103a53ad-9bae-4127-9162-4674d7972af5	TypeError: el.deleteMany is not a function	DELETE	/list	undefined
+20230317	20:12:07	afedf555-e003-40b8-897b-a48a518fa3bd	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	20:12:36	8a849644-844f-4b9f-b6c9-14bf268ca382	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	20:12:51	e60c3c03-03e2-40b6-b228-f33061ccf341	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	20:13:06	22abe5b3-3347-4ab9-ac68-fe665512806e	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	20:13:21	40e422de-852b-494a-9e22-6fa6bb0b633a	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	20:13:23	85ef086c-7817-4320-a310-9c486338f96d	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	20:13:29	e2774cb2-8ec2-4d90-b0a1-a547c058f996	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	20:13:44	4261bcad-5862-4dba-867f-f71b1234e07e	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	20:14:14	df7cdd1e-2c3a-46e2-8407-9ba8d28aea59	ReferenceError: listsWithUser is not defined	GET	/list	http://localhost:3000
+20230317	20:14:17	8c5ad054-6d88-457d-a87e-884abf5a5de0	ReferenceError: listsWithUser is not defined	GET	/list	http://localhost:3000
+20230317	20:14:32	af1f7087-4b34-4529-9d60-bbc0fee6e2b7	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	20:14:48	bf84f9e4-a358-4764-a0d9-fe09307b1b2b	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	21:31:36	1369bf3f-eee6-4148-9c52-64825bd6a5fc	TypeError: Cannot destructure property 'user' of 'res.body' as it is undefined.	GET	/list	http://localhost:3000
+20230317	21:51:48	56218938-e71b-4df1-81c7-89ef9fe1d304	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	22:21:47	2dd3d737-8256-4731-9c6c-7c59e9087c25	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230317	22:22:02	174a3cc2-576f-4f28-ab5c-7ceab1aecd9a	ReferenceError: user is not defined	GET	/list	http://localhost:3000
+20230318	18:46:43	9e6cc579-4bb2-497c-92da-8381e59f30ac	ReferenceError: result is not defined	DELETE	/list	http://localhost:3000
+20230318	18:46:44	358e8084-06f2-4f9c-9ccd-8d7fa5598490	ReferenceError: result is not defined	DELETE	/list	http://localhost:3000
+20230318	18:46:45	11f66397-b462-438e-bff5-cf4e82e426e7	ReferenceError: result is not defined	DELETE	/list	http://localhost:3000
+20230318	18:46:45	efeaa501-59b1-4f7b-943a-930e5e0dcd0a	ReferenceError: result is not defined	DELETE	/list	http://localhost:3000
+20230318	18:46:45	e8d70c97-2afe-4ba8-b445-f759121611e7	ReferenceError: result is not defined	DELETE	/list	http://localhost:3000
+20230318	18:46:51	8ffd9d94-c039-49cc-aed6-994dc13bf8a8	ReferenceError: result is not defined	DELETE	/list	http://localhost:3000
+20230318	18:47:51	eca5ae73-65b3-4cd4-8f4e-24fa882f0e9c	RangeError: Invalid status code: list  'New list' with ID 6415e7b93816c99a7a9d8592 deleted	DELETE	/list	http://localhost:3000
+20230318	18:47:57	79bff175-6e5d-47bc-9d03-b2150a0a676c	RangeError: Invalid status code: list  'New list' with ID 6415e7ba3816c99a7a9d8594 deleted	DELETE	/list	http://localhost:3000
+20230318	18:48:14	d7e3fc3d-28ba-46bf-a43a-2d7b47af07f7	RangeError: Invalid status code: list  'New list' with ID 6415e7bf3816c99a7a9d859a deleted	DELETE	/list	http://localhost:3000
+20230318	18:48:42	0a8f6cb1-14de-4e3e-995b-b9db6d7364d3	RangeError: Invalid status code: {
+  _id: new ObjectId("6415e7ba3816c99a7a9d8596"),
+  id: new ObjectId("6414e7873816c99a7a9d7733"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: 'New list',
+  date: 2023-03-17T22:19:51.579Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	18:48:51	349ad9d2-d479-479f-8e6e-9c91666f22a2	RangeError: Invalid status code: {
+  id: new ObjectId("6415eb63020c719674729180"),
+  _id: new ObjectId("64131fc48f9a7d1a289ea4cb"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: 'New list',
+  date: 2023-03-16T13:54:49.350Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	19:17:37	3672806b-e9ca-4833-b5bd-b120badfc548	TypeError: card.findOne is not a function	DELETE	/list	http://localhost:3000
+20230318	19:19:36	e5de63f4-6251-46e2-a960-5baec663cdca	TypeError: el.findOne is not a function	DELETE	/list	http://localhost:3000
+20230318	19:20:40	c287c307-a274-40c6-a480-b77d8fea943d	TypeError: Reduce of empty array with no initial value	DELETE	/list	http://localhost:3000
+20230318	19:32:48	ec010c9b-5063-48e2-be52-a45d302f9159	RangeError: Invalid status code: {
+  _id: new ObjectId("6415ecc113fa32227867cdf9"),
+  id: new ObjectId("6415eba113fa32227867ccc6"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: 'New list',
+  date: 2023-03-18T16:49:37.279Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	19:34:13	d15c7758-8e42-4ab1-bb80-4ebbcf718e34	RangeError: Invalid status code: {
+  _id: new ObjectId("6415f21c4158f4ac663999b2"),
+  id: new ObjectId("6415f2104158f4ac663999ae"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: 'New list',
+  date: 2023-03-18T17:17:04.589Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	19:51:28	f559a2aa-7d98-44eb-bfb2-ba437939055c	RangeError: Invalid status code: {
+  _id: new ObjectId("6415e8173816c99a7a9d85b3"),
+  id: new ObjectId("6414e7873816c99a7a9d7733"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: 'New list',
+  date: 2023-03-17T22:19:51.579Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	22:40:07	309eb311-a26d-40e1-af8e-d2217d3da9ec	RangeError: Invalid status code: {
+  _id: new ObjectId("6415fa3a8eea0dac59061243"),
+  id: new ObjectId("6415f9a88eea0dac59061214"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: '4',
+  date: 2023-03-18T17:49:28.708Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	22:40:49	0754f27a-943d-4594-b8e1-a501b378132e	RangeError: Invalid status code: {
+  _id: new ObjectId("6415fa6a8eea0dac5906124d"),
+  id: new ObjectId("6415f9a88eea0dac59061214"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: '5',
+  date: 2023-03-18T17:49:28.708Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	23:05:03	bc9e4d65-0345-4f1c-a281-54f76e980a12	TypeError: Cards.save is not a function	PATCH	/card	http://localhost:3000
+20230318	23:05:41	a52a6bcc-4e08-4077-aef9-fd412879cf71	TypeError: Cards.save is not a function	PATCH	/card	http://localhost:3000
+20230318	23:17:49	9af4bbf0-7cb3-4afb-9c55-8ca7ee0b01fd	RangeError: Invalid status code: {
+  _id: new ObjectId("6415fa328eea0dac5906123f"),
+  id: new ObjectId("6415f9a88eea0dac59061214"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: '3',
+  date: 2023-03-18T17:49:28.708Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	23:17:52	57dad0b8-c5c0-4e51-b8ba-b3509ea73328	RangeError: Invalid status code: {
+  _id: new ObjectId("6415fa798eea0dac59061251"),
+  id: new ObjectId("6415f9a88eea0dac59061214"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: '6',
+  date: 2023-03-18T17:49:28.708Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	23:19:07	57651e81-484a-4113-a098-282a28f709e2	RangeError: Invalid status code: {
+  _id: new ObjectId("64162ac2862042e3389ed720"),
+  id: new ObjectId("641627c2862042e3389ed153"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: 'New list',
+  date: 2023-03-18T21:06:10.860Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	23:19:08	d19be161-8cad-4563-9034-40ac5efb2955	RangeError: Invalid status code: {
+  _id: new ObjectId("64162ac3862042e3389ed724"),
+  id: new ObjectId("641627c2862042e3389ed153"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: 'New list',
+  date: 2023-03-18T21:06:10.860Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230318	23:19:09	8d5dc41a-e937-42bc-a752-3d029ee005df	RangeError: Invalid status code: {
+  _id: new ObjectId("64162ac4862042e3389ed728"),
+  id: new ObjectId("641627c2862042e3389ed153"),
+  user: new ObjectId("64124e95cc82952afbad98bf"),
+  title: 'New list',
+  date: 2023-03-18T21:06:10.860Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000
+20230319	00:54:46	bf6f78cd-7379-478e-a730-30da49fba65a	RangeError: Invalid status code: {
+  _id: new ObjectId("64164128c10ab615dc661646"),
+  id: new ObjectId("64162af0c10ab615dc65f84d"),
+  user: new ObjectId("64164075c10ab615dc66159a"),
+  title: 'New list',
+  date: 2023-03-18T21:19:44.336Z,
+  __v: 0
+}	DELETE	/list	http://localhost:3000

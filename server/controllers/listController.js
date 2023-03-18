@@ -1,6 +1,15 @@
 const Lists = require("../models/Lists");
 const Cards = require("../models/Card");
 
+const getList = async(req,res) => {
+    const list = await Lists.find().lean();
+    if (!list?.length) {
+        return res.status(400).json({ message: 'No lists found' })
+    }
+    const lists = list
+    res.json(lists)
+}
+
 const createList = async(req,res) => {
     const {user, cards,title,date} = req.body;
     if(!user) {
@@ -23,7 +32,7 @@ const updateList = async(req,res) =>{
         return res.status(400).json({ message: 'All fields are required' })
     }
     if (!list) {
-        return res.status(400).json({ message: 'List not found' })
+        return res.status(400).json({ message: 'list not found' })
     }
 
     list.title = title;
@@ -36,23 +45,26 @@ const deleteList = async (req, res) => {
     const { id } = req.body;
 
     if (!id) {
-        return res.status(400).json({ message: 'List ID required' });
+        return res.status(400).json({ message: 'list ID required' });
     }
 
     const list = await Lists.findById(id).exec();
 
     const card = await Cards.find({list}).exec();
+
     if (!list) {
-        return res.status(400).json({ message: 'List not found' });
+        return res.status(400).json({ message: 'list not found' });
     }
-    const resultCard = await card.map((el) => el.deleteOne());
-    // const result = await list.deleteOne();
-    // const reply = `List  '${result.title}' with ID ${result._id} deleted`;
+    const correctCard = await card.filter(el => el.list !== id);
+    const resultCard = correctCard.map((el) => el.deleteOne());
+    const result = await list.deleteOne();
+    // const reply = `list  '${result.title}' with ID ${result._id} deleted`;
     //
-    res.json(resultCard);
+    res.json(result,resultCard);
 }
 
 module.exports = {
+    getList,
     createList,
     updateList,
     deleteList

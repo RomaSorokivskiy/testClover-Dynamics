@@ -8,12 +8,9 @@ const verifyJWT = require("../middleware/verifyJWT");
 router.use(verifyJWT);
 
 router.route("/")
+    .get(listController.getList)
     .post(listController.createList)
     .patch(listController.updateList)
     .delete(listController.deleteList)
-router.route("/card")
-    .post(cardController.createCard)
-    .patch(cardController.updateCard)
-    .delete(cardController.deleteCard)
 
 module.exports = router;

@@ -1,6 +1,11 @@
 const mongoose = require("mongoose")
+const {ObjectId} = require("mongodb");
 
 const cardSchema = new mongoose.Schema({
+    id:{
+        type:mongoose.Schema.Types.ObjectId,
+        default: new ObjectId()
+    },
     list: {
         type:mongoose.Schema.Types.ObjectId,
         required:true,

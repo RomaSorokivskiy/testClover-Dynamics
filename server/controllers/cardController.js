@@ -1,10 +1,16 @@
 const Cards = require("../models/Card");
 
+const getCards = async (req,res) => {
+    const card = await Cards.find().lean();
+    const cards = card
+    res.json(cards)
+}
+
 const createCard = async(req,res) => {
     const {list,title,description} = req.body;
 
     if(!list) {
-        return res.status(400).json({ message: 'Fields List required' });
+        return res.status(400).json({ message: 'Fields list required' });
     }
     const card = await Cards.create({list,title,description});
 
@@ -14,12 +20,12 @@ const createCard = async(req,res) => {
         return res.status(400).json({ message: 'Invalid card data received' })
     }
 }
+
 const updateCard = async(req,res) => {
     const {id,list,title,description} = req.body;
 
     const card = await Cards.findById(id).exec()
-
-    if (!id || !list || !title || description) {
+    if (!id) {
         return res.status(400).json({ message: 'All fields are required' })
     }
     if (!card) {
@@ -30,6 +36,9 @@ const updateCard = async(req,res) => {
     card.title = title;
     card.description = description;
     card.date = new Date();
+
+    const updateCards = await card.save()
+    res.json(updateCards)
 }
 const deleteCard = async(req,res) => {
     const { id } = req.body;
@@ -52,6 +61,7 @@ const deleteCard = async(req,res) => {
 }
 
 module.exports = {
+    getCards,
     createCard,
     updateCard,
     deleteCard

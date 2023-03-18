@@ -2,8 +2,8 @@ const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 
 const login = async (req,res) => {
-    const {username} = req.body;
-
+    const {username,id} = req.body;
+    console.log(id)
     const foundUser = await User.findOne({username}).exec();
 
     if(!foundUser){
@@ -13,6 +13,7 @@ const login = async (req,res) => {
     const accessToken = jwt.sign(
         {
             "UserInfo": {
+                "id":foundUser._id,
                 "username" : foundUser.username
             }
         },
@@ -20,7 +21,8 @@ const login = async (req,res) => {
     );
     const refreshToken = jwt.sign(
         {
-            "username": foundUser.username
+            "username": foundUser.username,
+            "id": foundUser._id
         },
         process.env.REFRESHTOKEN, {expiresIn: "7d"}
     );
@@ -50,6 +52,7 @@ const refresh = async (req,res) => {
                 {
                     "UserInfo": {
                         "username": foundUser.username,
+                        "id": foundUser._id
                     }
                 },
                 process.env.ACCECTOKEN, {expiresIn: "15m"}
