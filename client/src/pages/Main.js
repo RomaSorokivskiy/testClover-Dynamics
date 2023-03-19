@@ -7,7 +7,7 @@ const Main = () => {
                 <div>
                     <h2>React Trello</h2>
                     <h3>Simple ToDo app, for begging using app<br/>Click button <span>LOGIN/REGISTER</span><br/>
-                    Then use it like <a href="client/src/pages/Main">Trello App</a>
+                    Then use it like <a href="https://trello.com/">Trello App</a>
                     </h3>
                 </div>
                 <div>
