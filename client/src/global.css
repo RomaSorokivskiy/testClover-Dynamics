@@ -64,6 +64,7 @@ main a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 .List {
@@ -106,7 +107,8 @@ main a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #2D2727;
+    background: #eeeeee;
+    box-shadow: 15px 10px 20px #2D2727;
     border-radius: 25px;
     position: absolute;
     top: 15%;
@@ -126,4 +128,23 @@ main a {
 }
 .editForm form .descr {
     height: 100px;
+}
+@media screen and (max-width: 375px){
+    .List {
+        width: 300px;
+    }
+    .Card {
+        min-width: 200px;
+    }
+    .wrapper {
+        justify-content: center;
+    }
+    .editForm {
+        width: 350px;
+        top: 20%;
+        z-index: 1;
+    }
+    .active {
+        left: 3vw;
+    }
 }
