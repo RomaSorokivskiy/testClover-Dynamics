@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom"
 import useTitle from "../../hooks/useTitle"
 import {Container} from "@mui/material";
 import {CiSaveUp2} from "react-icons/ci";
+import {setCredentials} from "../auth/authSlice";
+import {useLoginMutation} from "../auth/authSliceAPI";
+import {useDispatch} from "react-redux";
 
 const USER_REGEX = /^[A-z]{3,20}$/
 
@@ -24,6 +27,8 @@ const NewUserForm = () => {
         setValidUsername(USER_REGEX.test(username))
     }, [username])
 
+    const [login] = useLoginMutation()
+    const dispatch = useDispatch()
 
 
     useEffect(() => {
@@ -41,6 +46,8 @@ const NewUserForm = () => {
         e.preventDefault()
         if (canSave) {
             await addNewUser({ username })
+            const { accessToken } = await login({ username }).unwrap()
+            dispatch(setCredentials({ accessToken }))
         }
     }
 
